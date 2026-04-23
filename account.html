@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlow Account Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Join the CineFlow Creator Program</h1>
+    </header>
+    <main>
+        <section id="promo">
+            <h1>Welcome Video</h1>
+
+        </section>
+     <section id="registration">
+         <form action="action_page.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <legend>Personal information</legend>
+             <label for="fullname">Full Name</label><br>
+             <input type="text" id="fullname" placeholder="e.g. , John Mwangi"> <br>
+             <label for="email">Email address</label><br>
+             <input type="email" id="email" placeholder="e.g. , johnmwangi@gmail.com"><br>
+             <label for="password">Password</label><br>
+             <input type="password" id="password"><br>
+             <label for="date">Date</label><br>
+             <input type="date" id="date">
+            </fieldset>
+            <fieldset>
+                <legend>Channel Details</legend>
+                <label for="profile-picture">Profile picture(Only .jpg and .png are accepted)</label><br>
+                <input type="picture" id="profile-picture" style="border-radius: 50%;width: 100px;height: 100px;"><br>
+                <label for="range">Expected weekly upload volume(0-10)</label><br>
+                <input type="range" id="range"><br>
+                <input type="checkbox" id="tech">
+                <label for="tech">Tech</label>
+                <input type="checkbox" id="Lifestyle">
+                <label for="Lifestyle">Lifestyle</label>
+                <input type="checkbox" id="Gaming">
+                <label for="Gaming">Gaming</label>
+            </fieldset><br>
+            <button type="submit">Register Account</button>
+            <button type="reset">Clear Form</button>
+         </form>
+     </section> 
+    </main>
+    
+</body>
+</html>
