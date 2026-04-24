@@ -18,30 +18,47 @@
          <form action="action_page.php" method="post" enctype="multipart/form-data">
             <fieldset>
             <legend>Personal information</legend>
-             <label for="fullname">Full Name</label><br>
-             <input type="text" id="fullname" placeholder="e.g. , John Mwangi"> <br>
-             <label for="email">Email address</label><br>
-             <input type="email" id="email" placeholder="e.g. , johnmwangi@gmail.com"><br>
-             <label for="password">Password</label><br>
-             <input type="password" id="password"><br>
-             <label for="date">Date</label><br>
-             <input type="date" id="date">
+             <div class="form-group">
+                 <label for="fname">Full Name (Required):</label>
+                 <input type="text" id="fname" placeholder="e.g. , John Mwangi" pattern="[a-zA-Z0-9]+" required>
+             </div>
+             <div class="form-group">
+                 <label for="email">Email address:</label>
+                 <input type="email" id="email" placeholder="e.g. , johnmwangi@gmail.com" required>
+             </div>
+                 <div class="form-group">
+                     <label for="password">Password (Required):</label>
+                     <input type="password" id="password" placeholder="*********" required minlength="8">
+                 </div>
+                 <div class="form-group">
+                     <label for="dob">Date of Birth:</label>            
+                    <input type="date" id="dob" required max="2008-04-25">
+                 </div>
             </fieldset>
             <fieldset>
                 <legend>Channel Details</legend>
-                <label for="profile-picture">Profile picture(Only .jpg and .png are accepted)</label><br>
-                <input type="picture" id="profile-picture" style="border-radius: 50%;width: 100px;height: 100px;"><br>
-                <label for="range">Expected weekly upload volume(0-10)</label><br>
-                <input type="range" id="range"><br>
-                <input type="checkbox" id="tech">
-                <label for="tech">Tech</label>
-                <input type="checkbox" id="Lifestyle">
-                <label for="Lifestyle">Lifestyle</label>
-                <input type="checkbox" id="Gaming">
-                <label for="Gaming">Gaming</label>
-            </fieldset><br>
-            <button type="submit">Register Account</button>
-            <button type="reset">Clear Form</button>
+                <div class="form-group">
+                    <label for="profile-pic">Profile picture(Only .jpg and .png are accepted)</label>
+                    <input type="file" id="profile-pic" accept="image">
+                </div>
+                <div class="form-group">
+                    <label for="range">Expected weekly upload volume(0-10)</label>
+                    <input type="range" id="range">
+                </div>
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">Lifestyle
+                </label>
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">Gaming
+                </label>
+                <label for="checkbox">
+                    <input type="checkbox" id="checkbox">Tech
+                </label>
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">Register Account</button>
+                <button type="reset">Clear Form</button>
+            </div>
          </form>
      </section> 
     </main>
