@@ -65,7 +65,7 @@ c. Open 'index.html' in any browser.
 
 ### 8. Screenshots
 
-![Desktop View](assets/screenshots/screenshot.jpg)
+![Desktop View](assets/images/screenshot.jpg)
 
 ### 9. Author
 **Rollings Majiwa**
