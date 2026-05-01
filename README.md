@@ -74,6 +74,6 @@ c. Open 'index.html' in any browser.
 * Email: [rollingsmajiwa@gmail.com]
 
 ### Get started
-Interested in the code behind Gaspary Gym? You can reach me directly via my profile or open an issue for collaboration.
+Interested in the code behind CineFlow Account? You can reach me directly via my profile or open an issue for collaboration.
 [**Visit my Github profile**](https://github.com/rollingsmajiwa)
 
